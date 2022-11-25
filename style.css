@@ -1,0 +1,72 @@
+body {
+    color: white;
+    background-color:  black;
+}
+
+header {
+    background-color: rgb(29, 0, 176);
+    border: 1px solid white;
+    padding: 10px;
+   
+}
+
+.hero {
+background-color: red;
+border: 1px solid white;
+padding: 10px;
+}
+
+.content {
+background-color: green;
+border: 1px solid white;
+padding: 10px;
+}
+
+.sidebar {
+    background-color: purple;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+footer {
+    background-color: gray;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+
+/* Medida para telefono "iphone" */
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px)  {
+    .content, .sidebar, .hero, header, footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+   /* Medida para tablet "Ipad" */
+
+@media only screen 
+and (min-device-width: 668px) 
+and (max-device-width: 1200px)  {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    
+    }
+}
+
+/* Medida para portatil */
+
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px)  { 
+    .flex-container {
+        display: flex;
+        width: 75%;
+        padding-left: 10%;
+    }
+
